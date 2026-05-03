@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>History - Converter</title>
+</head>
+<body>
+     <header>
+
+        <img src="logo.png" control width="40" height="40">
+        <h1>current converter <style color="gray;"></style></h1>
+       </header>
+       <nav>
+       <button><a href="index.html" >home</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button> <a href="converter.html">convert</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button> <a href="details.html">details</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button>   <a href="history.html">history</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button>   <a href="settings.html">setting</a></button>
+       </nav>
+    <div class="div3">
+        <h2>Conversion History</h2>
+        <hr>
+        <ul id="historyList" style="list-style: none; padding: 0; text-align: left; max-width: 300px; margin: auto;">
+            </ul>
+        <br>
+        <button onclick="clearHistory()">Clear All History</button>
+        <br><br>
+        <a href="converter.html" style="color: white; text-decoration: none;">Back to Converter</a>
+    </div>
+
+    <footer>
+        <p>&copy; cap_ 2026</p>
+    </footer>
+
+    <script>
+        function loadHistory() {
+            const list = document.getElementById('historyList');
+            
+            const history = JSON.parse(localStorage.getItem('conv_history')) || [];
+            
+            if (history.length === 0) {
+                list.innerHTML = "<li>No recent conversions.</li>";
+                return;
+            }
+
+            list.innerHTML = history.map(item => 
+                `<li style="background: rgba(255,255,255,0.1); margin: 5px 0; padding: 10px; border-radius: 5px;">
+                    ${item}
+                </li>`
+            ).join('');
+        }
+
+        function clearHistory() {
+            if(confirm){
+                alert("Are you sure you want to delete all history?")} {
+                localStorage.removeItem('conv_history');
+                loadHistory();
+            }
+        }
+
+        window.onload = loadHistory;
+    </script>
+</body>
+</html>

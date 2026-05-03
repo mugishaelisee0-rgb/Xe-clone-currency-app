@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head><title>current <exchange-home></exchange-home></title>
+        <link rel="styleSheet" href="style.css">
+    </head>
+    <body>
+       <header>
+
+        <img src="logo.png" control width="40" height="40">
+        <h1>current converter <style color="gray;"></style></h1>
+      <nav>
+       <button><a href="index.html" >home</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button> <a href="converter.html">convert</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button> <a href="details.html">details</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button>   <a href="history.html">history</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button>   <a href="settings.html">setting</a></button>
+       </nav>  </header>
+      
+       <div class="div">
+        <h1>this website it help the people used money gram</h1>
+        <pre>
+            like the people who want to send money to their family in other 
+            country they can use this website to 
+            know the current exchange rate and also they can convert the
+            money to the currency of the country they want to send money to
+            the people who want to know the current exchange rate they can use 
+            this website to know the current exchange rate and also they can convert 
+            the money to the currency of the country they want to send money 
+            
+        </pre>
+       </div>
+        <div class="div1">
+
+            <h1></h1>
+        <input type="number" id="amount" placeholder="ENTER AMOUNT"><br>
+        <select id="fromCurrency">
+            <option value="RWF">RWF</option>
+            <option value="USD">USD</option>
+           <option value="EUR">EUR</option>
+        </select><br>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="RWF">RWF</option>
+           <option value="EUR">EUR</option>
+        </select>
+        <button onclick="convert()">convert</button>
+        <p id="result"></p>
+         <button><a href="converter.html" style="text-align: right;">get start</a></button>
+    </div>
+    <script>
+        const rates = {
+  USD: 1,
+  EUR: 0.92,
+  RWF: 1300
+};
+
+function convert() {
+  let amount = document.getElementById("amount").value;
+  let from = document.getElementById("fromCurrency").value;
+  let to = document.getElementById("toCurrency").value;
+
+  if (!amount || amount <= 0) {
+    alert("Enter a valid amount");
+    return;
+  }
+
+  let result = (amount / rates[from]) * rates[to];
+
+  document.getElementById("result").innerText =
+    `${amount} ${from} = ${result.toFixed(2)} ${to}`;
+
+  saveHistory(amount, from, to, result);
+}
+    </script>
+   
+       <footer>
+        <p>&copy; cap_ 2026 
+            2026
+        </p>
+        <p> phone: 07844444444</p>
+        <p>email: cm.kevin2009@gmail.com</p>
+       </footer>
+    </body>
+</html>

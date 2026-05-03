@@ -1,0 +1,379 @@
+nav{
+    background-blend-mode:rgb(102, 53, 53);
+    text-emphasis: none;
+    text-shadow: 0ch;
+    text-align: center;
+    color: rgb(51, 51, 102);
+    transform: scale();
+    padding: 3px;
+background-color: #0f0404;
+text-decoration: none;
+}
+
+
+header{
+    background-color: rgb(45, 47, 49);
+    text-align: justify;
+    border-radius: 20px;
+    color: #b69393;
+    
+}
+
+footer {
+  background-color: #b69393;
+  color: white;
+  text-align: center;
+  padding: 15px;
+
+
+}
+
+
+
+logo{
+    align-content: first baseline;
+    align-items: center;
+    color: #000;
+}
+.div{
+    background-color: #796565;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+}
+.div1{
+    background-color: #0f0d0d;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin: 20px;
+}
+ button.div{
+    color: aliceblue;
+    background-color: #1f2c38;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 10px;
+
+}
+button.div1{
+     color: #f0f8ff;
+    background-color: #b69393;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 10px;
+
+}
+input{
+    border-radius: 20px;
+    color: #b69393;
+    margin: 2px;
+    height: 90;
+    height: 30px;
+}
+select{
+    color: #b69393;
+    border-radius: 20px;
+    border-color: #b69393;
+
+}
+:no-button{
+    border-radius: 20px;
+    color: #b69393;
+    background-color: aqua;
+}
+nav button{
+    color: #b69393;
+    background-color: #c09a76;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 10px;
+    
+    text-decoration: none;
+    border: none; 
+
+}
+body{
+    background-color: #0f0404;
+}
+.div2{
+    background-color: #683d3d;
+    border-radius: 20px;
+    color: rgb(199, 184, 184);
+    text-align: center;
+    text-decoration: dashed;
+    justify-content: center;
+
+}
+.div3 button{
+     color: #f0f8ff;
+    background-color: #b69393;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 10px;
+
+}
+.div3 input{
+    border-radius: 20px;
+    color: #b69393;
+    margin: 2px;
+    height: 90;
+    height: 30px;
+}
+.div3{
+    background-color: #c09a76;
+    color: #f0f8ff;
+    border-radius: 20px;
+    text-align: center;
+    width: 400;
+    height: fit-content;
+    paddinpadding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+
+}
+.div4{
+    margin-top: 20px;
+}
+.div4 table{
+    border: 1px solid #c4a484;
+    padding: 12px;
+    text-align: center;
+    color: #b69393;
+}
+.div4 tr td{
+    color: #683d3d;
+}
+.navbar a {
+    text-decoration: none; 
+    color: #0000ff;        
+}
+
+
+.navbar a:hover {
+    text-decoration: none; 
+    opacity: 0.8;          
+}
+
+nav a, .nav-button, a {
+    text-decoration: none !important; 
+    display: inline-block;           
+}
+
+
+nav a:hover, .nav-button:hover {
+    text-decoration: none;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #a68a6d;
+}
+
+.div5{
+    text-align: center;
+    background-color: #683d3d;
+}
+.div7{
+    text-align: center;
+}
+.div8{
+    text-align: center;
+}
+/* Example Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color:#683d3d;
+}
+
+body.dark-mode .settings-section {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+body.dark-mode .navbar {
+    background-color: #1a1a1a;
+}
+/* General Styles */
+:root {
+    --bg-color: #1a221f;
+    --text-color: #333;
+    --card-bg: #c23d3d;
+    --accent-color: #4a90e2;
+    --danger-color: #e74c3c;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #661f1f;
+    --card-bg: #1e1e1e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    transition: background 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--card-bg);
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.active {
+    color: var(--accent-color) !important;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Settings Sections */
+.settings-section {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+/* Toggle Switch Styling */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #463434;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--accent-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* Buttons */
+.danger-btn {
+    background-color: var(--danger-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.danger-btn:hover {
+    opacity: 0.9;
+}
+/* Colors for Light Mode */
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* Colors for Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Simple Toggle Switch Design */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 14px; width: 14px;
+    left: 3px; bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked + .slider { background-color: #4a90e2; }
+input:checked + .slider:before { transform: translateX(20px);
+text-align: center; }
